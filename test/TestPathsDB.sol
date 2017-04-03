@@ -10,16 +10,16 @@ contract TestPathsDB {
 
   function beforeEach(){
     pathsDB = PathsDB(new PathsDB());
-    testAddress1 = 0x8e92d3b1a9af41c9ff043d892c6d6648aa7721b6;
+    testAddress1 = 0x16f221f434322a9b639df421af8fbb66d4404fd4;
   }
 
   function testCheckpointCanBeAddedToPathsDBAndReturnsTrue(){
-    Assert.equal(pathsDB.addCheckpoint(1, testAddress1), true, "PathsDB doesn't return true when a new checkpoint is added.");
+    Assert.equal(pathsDB.addCheckpoint(testAddress1), true, "PathsDB doesn't return true when a new checkpoint is added.");
   }
 
   function testCheckpointCannotBeAddedWithInvalidKeyAndReturnsFalse(){
-    pathsDB.addCheckpoint(1, testAddress1);
-    Assert.equal(pathsDB.addCheckpoint(1, testAddress1), false, "PathsDB doesn't return false when an invalid key is provided.");
+    pathsDB.addCheckpoint(testAddress1);
+    Assert.equal(pathsDB.addCheckpoint(testAddress1), false, "PathsDB doesn't return false when an invalid key is provided.");
   }
 
 }
