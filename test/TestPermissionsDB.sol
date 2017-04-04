@@ -18,4 +18,11 @@ contract TestPermissionsDB {
     Assert.equal(ownerPermission, 1, "PermissionsDB isn't initialized with owner having a permission of one.");
   }
 
+  function testUserWithPermissionOfOneCanSetOtherUsersPermissionS(){
+    permissionsDB.setPermission(testAddress1, 1);
+    Assert.equal(permissionsDB.perms(testAddress1), 1, "Owner cannot create another admin.");
+    permissionsDB.setPermission(testAddress1, 0);
+    Assert.equal(permissionsDB.perms(testAddress1), 0, "Owner cannot create another location user.");
+  }
+
 }
