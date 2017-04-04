@@ -8,7 +8,7 @@ contract TestPathsDB {
   PathsDB pathsDB;
   address testAddress1;
 
-  function beforeEach(){
+  function beforeEach() {
     pathsDB = PathsDB(new PathsDB());
     testAddress1 = 0x16f221f434322a9b639df421af8fbb66d4404fd4;
   }
