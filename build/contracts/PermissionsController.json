@@ -1,0 +1,27 @@
+{
+  "contract_name": "PermissionsController",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052346000575b60008054600160a060020a03191633600160a060020a03161790555b5b609d806100346000396000f300606060405263ffffffff60e060020a6000350416638da5cb5b81146022575b6000565b34600057602c6055565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058200e6a70d1c1c49dd25d1140c9f79d167f264677d0bd7748eff074dc06f43ef7390029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1491278509927
+}
