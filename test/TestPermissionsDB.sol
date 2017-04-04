@@ -13,8 +13,9 @@ contract TestPermissionsDB {
     testAddress1 = 0x16f221f434322a9b639df421af8fbb66d4404fd4;
   }
 
-  function testChecksIfAGivenAddressIsALocationUserAndReturnsAFalseIfTheyAreNot(){
-    Asser.equal(permissionsDB.getPermissionsFor(testAddress1), false, "PermissionsDB doesn't reject a non existing location user.");
+  function testIsInitializedWithOwnerHavingAPermissionOfOne(){
+    uint ownerPermission = permissionsDB.perms(address(this)); 
+    Assert.equal(ownerPermission, 1, "PermissionsDB isn't initialized with owner having a permission of one.");
   }
 
 }
