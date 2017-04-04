@@ -17,9 +17,13 @@ contract TestPathsDB {
     Assert.equal(pathsDB.addCheckpoint(testAddress1), true, "PathsDB doesn't return true when a new checkpoint is added.");
   }
 
-  function testCheckpointCannotBeAddedWithInvalidKeyAndReturnsFalse(){
+  function testCheckpointCannotBeAddedIfAddressIsTheSameAsTheLastOneAndReturnsFalse(){
     pathsDB.addCheckpoint(testAddress1);
-    Assert.equal(pathsDB.addCheckpoint(testAddress1), false, "PathsDB doesn't return false when an invalid key is provided.");
+    Assert.equal(pathsDB.addCheckpoint(testAddress1), false, "PathsDB doesn't return false when a duplicate address is provided.");
+  }
+
+  function testCheckpointCannotBeEmptyAndReturnsFalse(){
+    Assert.equal(pathsDB.addCheckpoint(0x0), false, "PathsDB doesn't return false when an empty address is provided.");
   }
 
 }
