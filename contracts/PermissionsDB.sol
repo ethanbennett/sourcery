@@ -8,7 +8,7 @@ contract PermissionsDB {
     perms[msg.sender] = 1;
   }
 
-  function setPermission(address user, uint perm) constant returns (bool result) {
+  function setPermission(address user, uint perm) constant returns (bool) {
     if (perms[msg.sender] != 1) {
       return false;
     }
