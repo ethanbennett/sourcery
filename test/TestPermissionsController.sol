@@ -21,5 +21,8 @@ contract TestPermissionsController {
     Assert.notEqual(permissionsController.permissionsDB(), 0x0 , "PermissionsController isn't initialized with a permissionsDB.");
   }
 
+  function testPermissionsControllerCanSetPermissionsInPermissionsDB(){
+    Assert.equal(permissionsController.setPermission(testAddress1, 1), true, "PermissionsController is unable to set permissions.");
+  }
 
 }
