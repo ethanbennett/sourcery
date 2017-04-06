@@ -26,4 +26,8 @@ contract PathsDB {
 
       return checkpoints;
     }
+
+    function getPathLength() constant returns (uint) {
+      return path.length;
+    }
 }
