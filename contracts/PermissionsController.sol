@@ -4,7 +4,7 @@ import "./PermissionsDB.sol";
 
 contract PermissionsController {
   address public owner;
-  address public permissionsDB;
+  address permissionsDB;
 
   function PermissionsController(){
     owner = msg.sender;

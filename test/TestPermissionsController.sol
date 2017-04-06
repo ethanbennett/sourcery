@@ -17,17 +17,13 @@ contract TestPermissionsController {
     Assert.equal(permissionsController.owner(), address(this), "PermissionsController isn't initialized with an owner.");
   }
 
-  function testPermissionsControllerIsInitializedWithAPermissionsDB() {
-    Assert.notEqual(permissionsController.permissionsDB(), 0x0 , "PermissionsController isn't initialized with a permissionsDB.");
-  }
-
   function testPermissionsControllerCanSetPermissions(){
     Assert.equal(permissionsController.setPermission(testAddress1, 1), true,"PermissionsController cannot set permissions.");
   }
 
-  function testPermissionsCOntrollerCanGetPermissions(){
-    permissionsController.setPermission(testAddress1, 1);
-    Assert.equal(permissionsController.getPermission(testAddress1), 1, "PermissionsController cannot get permissions.");
+  function testPermissionsControllerCanGetPermissions(){
+    permissionsController.setPermission(testAddress1, 2);
+    Assert.equal(permissionsController.getPermission(testAddress1), 2, "PermissionsController cannot get permissions.");
   }
 
 }
