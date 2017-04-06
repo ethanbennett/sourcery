@@ -1,4 +1,4 @@
-pragma solidity ^0.4.4;
+pragma solidity ^0.4.8;
 
 contract PathsDB {
 
@@ -25,5 +25,9 @@ contract PathsDB {
       }
 
       return checkpoints;
+    }
+
+    function getPathLength() constant returns (uint) {
+      return path.length;
     }
 }
