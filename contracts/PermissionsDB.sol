@@ -1,4 +1,4 @@
-pragma solidity ^0.4.4;
+pragma solidity ^0.4.8;
 
 contract PermissionsDB {
 
@@ -8,11 +8,11 @@ contract PermissionsDB {
     perms[msg.sender] = 1;
   }
 
-  function setPermission(address user, uint perm) constant returns (bool) {
+  function setPermission(address _user, uint _perm) constant returns (bool) {
     if (perms[msg.sender] != 1) {
       return false;
     }
-    perms[user] = perm;
+    perms[_user] = _perm;
     return true;
   }
 }

@@ -1,4 +1,4 @@
-pragma solidity ^0.4.2;
+pragma solidity ^0.4.8;
 
 import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
@@ -21,8 +21,13 @@ contract TestPermissionsController {
     Assert.notEqual(permissionsController.permissionsDB(), 0x0 , "PermissionsController isn't initialized with a permissionsDB.");
   }
 
-  function testPermissionsControllerCanSetPermissionsInPermissionsDB(){
-    Assert.equal(permissionsController.setPermission(testAddress1, 1), true, "PermissionsController is unable to set permissions.");
+  function testPermissionsControllerCanSetPermissions(){
+    Assert.equal(permissionsController.setPermission(testAddress1, 1), true,"PermissionsController cannot set permissions.");
+  }
+
+  function testPermissionsCOntrollerCanGetPermissions(){
+    permissionsController.setPermission(testAddress1, 1);
+    Assert.equal(permissionsController.getPermission(testAddress1), 1, "PermissionsController cannot get permissions.");
   }
 
 }
