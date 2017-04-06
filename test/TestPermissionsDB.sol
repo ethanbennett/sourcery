@@ -1,4 +1,4 @@
-pragma solidity ^0.4.2;
+pragma solidity ^0.4.8;
 
 import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
@@ -13,16 +13,16 @@ contract TestPermissionsDB {
     testAddress1 = 0x16f221f434322a9b639df421af8fbb66d4404fd4;
   }
 
-  function testIsInitializedWithOwnerHavingAPermissionOfOne(){
+  function testPermmisionDBIsInitializedWithOwnerHavingAPermissionOfOne(){
     uint ownerPermission = permissionsDB.perms(address(this)); 
-    Assert.equal(ownerPermission, 1, "PermissionsDB isn't initialized with owner having a permission of one.");
+    Assert.equal(ownerPermission, 2, "PermissionsDB isn't initialized with owner having a permission of one.");
   }
 
   function testUserWithPermissionOfOneCanSetOtherUsersPermissionS(){
+    permissionsDB.setPermission(testAddress1, 2);
+    Assert.equal(permissionsDB.perms(testAddress1), 2, "Owner cannot create another admin.");
     permissionsDB.setPermission(testAddress1, 1);
-    Assert.equal(permissionsDB.perms(testAddress1), 1, "Owner cannot create another admin.");
-    permissionsDB.setPermission(testAddress1, 0);
-    Assert.equal(permissionsDB.perms(testAddress1), 0, "Owner cannot create another location user.");
+    Assert.equal(permissionsDB.perms(testAddress1), 1, "Owner cannot create another location user.");
   }
 
 }
