@@ -19,8 +19,14 @@ contract TestDoug {
     Assert.equal(doug.owner(), address(this), "Doug doesn't seem to have an owner after initialization");
   }
 
-  function testDougIsInitializedWithContractAddresses() {
-    Assert.equal(doug.contracts("Catz"), 0x0, "Doug doesn't have this address registered.");
+  // function testDougIsInitializedWithContractAddresses() {
+  // }
+
+  function testDougIsInitializedWithNecesaryContractsAddresses(){
+    Assert.notEqual(doug.contracts("permsDB"), 0x0, "Doug doesn't have PermissionsDB registered.");
+    Assert.notEqual(doug.contracts("permsController"), 0x0, "Doug doesn't have PermissionsController address registered.");
+    Assert.notEqual(doug.contracts("pathsDB"), 0x0, "Doug doesn't have PathsDB address registered.");
+    Assert.notEqual(doug.contracts("pathsController"), 0x0, "Doug doesn't have PathsController address registered.");
   }
 
   function testDougCanAddToContracts() {
