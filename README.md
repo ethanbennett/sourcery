@@ -12,9 +12,11 @@ This repository is the collection of smart contracts (written in Solidity) that 
 
 ### About Us
 
-We are a group of four [Turing School]() students, and this is our capstone
+We are a group of four [Turing School](https://www.turing.io/) students, and this is our capstone
 project for the back-end engineering program. You can learn more about our
-development process at these links: [DTR (team expectations)](), [stand-ups](), [Pivotal Tracker]().
+development process at these links: [DTR (team expectations)](https://gist.github.com/tmikeschu/1a37eef7724f06421d8bca19fd8be8ad), [stand-ups](https://gist.github.com/tmikeschu/14555f11f0d24d7c09749519c7b04337), [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/1996565).
+And more about us at these ones: [Nick](https://github.com/ski-climb), [David](https://github.com/DavidKnott), [Ethan](https://github.com/ethanbennett), [Mike](https://github.com/tmikeschu).
+
 
 ### Getting Started
 
