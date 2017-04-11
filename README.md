@@ -30,12 +30,17 @@ Here's a guide to what we mean when we say words:
 git clone https://github.com/ethanbennett/sourcery.git
 
 // Install dependencies:
-npm install truffle
-npm install solidity
+npm install -g truffle
+npm install -g testrpc
 
 // Run the tests:
+testrpc // Let this run in a separate terminal session
 truffle test
+
+// Migrate the contracts:
+truffle migrate
 ```
+If this is your first time working with this language or framework, you might want to reference the [Solidity](https://solidity.readthedocs.io/en/develop/) or [Truffle](https://truffle.readthedocs.io/en/latest/) documentation. Solidity sytax highlighting is for most text editors.
 
 ### About Us
 
