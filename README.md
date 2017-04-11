@@ -40,7 +40,7 @@ truffle test
 // Migrate the contracts:
 truffle migrate
 ```
-If this is your first time working with this language or framework, you might want to reference the [Solidity](https://solidity.readthedocs.io/en/develop/) or [Truffle](https://truffle.readthedocs.io/en/latest/) documentation. Solidity sytax highlighting is for most text editors.
+If this is your first time working with this language or framework, you might want to reference the [Solidity](https://solidity.readthedocs.io/en/develop/) or [Truffle](https://truffle.readthedocs.io/en/latest/) documentation. Solidity sytax highlighting is available for most text editors.
 
 ### About Us
 
