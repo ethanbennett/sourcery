@@ -50,4 +50,8 @@ contract PathsController {
 
         return path;
     }
+
+    function destroy() {
+        if (owner == msg.sender) selfdestruct(owner);
+    }
 }
