@@ -3,6 +3,11 @@ pragma solidity ^0.4.8;
 contract PathsDB {
 
     address[] public path;
+    address public owner;
+
+    function PathsDB() {
+      owner = msg.sender;
+    }
 
     function addCheckpoint(address checkpoint) returns (bool) {
       if (checkpoint == 0x0) {
@@ -29,5 +34,9 @@ contract PathsDB {
 
     function getPathLength() constant returns (uint) {
       return path.length;
+    }
+
+    function destroy() {
+        if (owner == msg.sender) selfdestruct(owner);
     }
 }

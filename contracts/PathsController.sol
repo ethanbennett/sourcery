@@ -51,6 +51,12 @@ contract PathsController {
         return path;
     }
 
+    function destroyPath(uint _lotId) returns (bool){
+        if (owner == msg.sender) PathsDB(paths[_lotId]).destroy();
+        paths[_lotId] = 0x0;
+        return true;
+    }
+
     function destroy() {
         if (owner == msg.sender) selfdestruct(owner);
     }
