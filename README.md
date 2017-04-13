@@ -8,7 +8,7 @@ There are countless reasons consumers might want to trace the path backwards fro
 
 ### How do I use it?
 
-This repository is the collection of smart contracts (written in Solidity for the Ethereum blockchain) that power our origin-tracking application. As a user, your internet browser will interact with our [React front end](https://github.com/tmikeschu/sourcery-client) which is backed by a [Rails API](https://github.com/DavidKnott/sourcery-api) to minimize data storage on the blockchain. You'll want to check out our [production site](https://sourcery-client.herokuapp.com), and if you're a developer, check out the "Getting Started" section below.
+This repository is the collection of smart contracts (written in [Solidity](https://solidity.readthedocs.io/en/develop/) for the [Ethereum ](https://www.ethereum.org/) blockchain) that power our origin-tracking application. As a user, your internet browser will interact with our [React front end](https://github.com/tmikeschu/sourcery-client) which is backed by a [Rails API](https://github.com/DavidKnott/sourcery-api) to minimize data storage on the blockchain. You'll want to check out our [production site](https://sourcery-client.herokuapp.com), and if you're a developer, check out the "Getting Started" section below.
 
 ### Getting Started
 
