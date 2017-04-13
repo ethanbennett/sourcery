@@ -56,6 +56,10 @@ Here's a guide to what we mean when we say words:
 
 * **Location**: Locations are checkpoints, but in future releases, they'll provide a layer of security for checkpoint creation. Similar to standard authentication strategies, a location will only be able to add a checkpoint (receive or send a lot) if they actually possess the lot in the first place.
 
+### Future Features
+
+You'll notice two branches besides master listed above: these are two pieces of functionality that are still under construction. One handles locations and permissions, the other registration. These two contracts aren't deployed to Ropsten, but they are usable to some degree with TestRPC.
+
 ### About Us
 
 We are a group of four [Turing School](https://www.turing.io/) students, and this is our capstone
