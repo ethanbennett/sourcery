@@ -1,0 +1,48 @@
+I0412 15:49:27.415567 ethdb/database.go:83] Allotted 128MB cache and 1024 file handles to /Users/Knott/Library/Ethereum/testnet/geth/chaindata
+I0412 15:49:27.421631 ethdb/database.go:176] closed db:/Users/Knott/Library/Ethereum/testnet/geth/chaindata
+I0412 15:49:27.424558 node/node.go:176] instance: Geth/v1.5.9-stable-a07539fb/darwin/go1.8.1
+I0412 15:49:27.424605 ethdb/database.go:83] Allotted 128MB cache and 1024 file handles to /Users/Knott/Library/Ethereum/testnet/geth/chaindata
+I0412 15:49:27.461901 core/genesis.go:95] Genesis block already in chain. Writing canonical number
+I0412 15:49:27.461960 eth/backend.go:276] Successfully wrote custom genesis block: 41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d
+I0412 15:49:27.462018 eth/backend.go:187] Protocol Versions: [63 62], Network Id: 3
+I0412 15:49:27.462107 eth/backend.go:215] Chain config: {ChainID: 3 Homestead: 0 DAO: <nil> DAOSupport: true EIP150: 0 EIP155: 10 EIP158: 10}
+I0412 15:49:27.462593 core/blockchain.go:219] Last header: #0 [41941023…] TD=1048576
+I0412 15:49:27.462601 core/blockchain.go:220] Last block: #0 [41941023…] TD=1048576
+I0412 15:49:27.462606 core/blockchain.go:221] Fast block: #0 [41941023…] TD=1048576
+I0412 15:49:27.463277 p2p/server.go:340] Starting Server
+I0412 15:49:29.579512 p2p/discover/udp.go:227] Listening, enode://12cac68b687d31459df4fec9f83b11fd6fcbf4860a0491d758e34525a58842f910c7587810890723269bdbc0dffa96f2b915a2605413b64ed3ee5651661830f8@[::]:30303
+I0412 15:49:29.579649 p2p/server.go:608] Listening on [::]:30303
+I0412 15:49:29.580914 node/node.go:341] IPC endpoint opened: /Users/Knott/Library/Ethereum/testnet/geth.ipc
+I0412 15:49:29.582382 node/node.go:411] HTTP endpoint opened: http://localhost:8545
+I0412 16:00:36.833291 node/node.go:427] HTTP endpoint closed: http://localhost:8545
+I0412 16:00:36.833356 node/node.go:373] IPC endpoint closed: /Users/Knott/Library/Ethereum/testnet/geth.ipc
+I0412 16:00:36.833377 core/blockchain.go:589] Chain manager stopped
+I0412 16:00:36.833391 eth/handler.go:230] Stopping ethereum protocol handler...
+I0412 16:00:36.833408 eth/handler.go:251] Ethereum protocol handler stopped
+I0412 16:00:36.833428 core/tx_pool.go:196] Transaction pool stopped
+I0412 16:00:36.833447 eth/backend.go:519] Automatic pregeneration of ethash DAG OFF (ethash dir: /Users/Knott/.ethash)
+I0412 16:00:36.833961 ethdb/database.go:176] closed db:/Users/Knott/Library/Ethereum/testnet/geth/chaindata
+I0412 16:00:41.342856 ethdb/database.go:83] Allotted 128MB cache and 1024 file handles to /Users/Knott/Library/Ethereum/testnet/geth/chaindata
+I0412 16:00:41.347983 ethdb/database.go:176] closed db:/Users/Knott/Library/Ethereum/testnet/geth/chaindata
+I0412 16:00:41.350906 node/node.go:176] instance: Geth/v1.5.9-stable-a07539fb/darwin/go1.8.1
+I0412 16:00:41.350961 ethdb/database.go:83] Allotted 128MB cache and 1024 file handles to /Users/Knott/Library/Ethereum/testnet/geth/chaindata
+I0412 16:00:41.372867 core/genesis.go:95] Genesis block already in chain. Writing canonical number
+I0412 16:00:41.372926 eth/backend.go:276] Successfully wrote custom genesis block: 41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d
+I0412 16:00:41.372981 eth/backend.go:187] Protocol Versions: [63 62], Network Id: 3
+I0412 16:00:41.373073 eth/backend.go:215] Chain config: {ChainID: 3 Homestead: 0 DAO: <nil> DAOSupport: true EIP150: 0 EIP155: 10 EIP158: 10}
+I0412 16:00:41.373540 core/blockchain.go:219] Last header: #0 [41941023…] TD=1048576
+I0412 16:00:41.373549 core/blockchain.go:220] Last block: #0 [41941023…] TD=1048576
+I0412 16:00:41.373554 core/blockchain.go:221] Fast block: #0 [41941023…] TD=1048576
+I0412 16:00:41.374113 p2p/server.go:340] Starting Server
+I0412 16:00:43.482947 p2p/discover/udp.go:227] Listening, enode://12cac68b687d31459df4fec9f83b11fd6fcbf4860a0491d758e34525a58842f910c7587810890723269bdbc0dffa96f2b915a2605413b64ed3ee5651661830f8@[::]:30303
+I0412 16:00:43.483139 p2p/server.go:608] Listening on [::]:30303
+I0412 16:00:43.484554 node/node.go:341] IPC endpoint opened: /Users/Knott/Library/Ethereum/testnet/geth.ipc
+I0412 16:00:43.485987 node/node.go:411] HTTP endpoint opened: http://localhost:8545
+I0412 16:00:49.081471 node/node.go:427] HTTP endpoint closed: http://localhost:8545
+I0412 16:00:49.081549 node/node.go:373] IPC endpoint closed: /Users/Knott/Library/Ethereum/testnet/geth.ipc
+I0412 16:00:49.081565 core/blockchain.go:589] Chain manager stopped
+I0412 16:00:49.081581 eth/handler.go:230] Stopping ethereum protocol handler...
+I0412 16:00:49.081596 eth/handler.go:251] Ethereum protocol handler stopped
+I0412 16:00:49.081624 core/tx_pool.go:196] Transaction pool stopped
+I0412 16:00:49.081650 eth/backend.go:519] Automatic pregeneration of ethash DAG OFF (ethash dir: /Users/Knott/.ethash)
+I0412 16:00:49.081893 ethdb/database.go:176] closed db:/Users/Knott/Library/Ethereum/testnet/geth/chaindata
